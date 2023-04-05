@@ -18,6 +18,10 @@
   font-weight: 500;
 }
 
+.hamburger {
+  display: none;
+}
+
 /* Responsive navbar */
 @media screen and (max-width: 1040px) {
   .nav-menu {
@@ -39,5 +43,9 @@
 
   .nav-menu li a {
     font-size: 2rem;
+  }
+
+  .hamburger {
+    display: initial;
   }
 }

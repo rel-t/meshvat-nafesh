@@ -1,7 +1,7 @@
-import './Navbar.css';
-
 import React from 'react';
+import './Navbar.css';
 import { Link } from 'react-router-dom';
+import { FaBars } from 'react-icons/fa';
 
 const Navbar = () => {
   return (
@@ -12,7 +12,7 @@ const Navbar = () => {
       </Link>
 
       {/* Nav Links */}
-      <ul className='nav-menu'>
+      <ul className="nav-menu">
         <li>
           <Link to={'/about'}>אודות</Link>
         </li>
@@ -23,6 +23,11 @@ const Navbar = () => {
           <Link to={'/donation'}>תרום עכשיו</Link>
         </li>
       </ul>
+
+      {/* Hamburger menu */}
+      <div className="hamburger">
+        <FaBars size={20} style={{ color: '#fff' }} />
+      </div>
     </div>
   );
 };
