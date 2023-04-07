@@ -7,8 +7,13 @@ const Navbar = () => {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
 
+  const [color, setColor] = useState(false)
+  const changeColor = () => setColor(window.scrollY >= 100 ? true : false);
+  
+  window.addEventListener('scroll', changeColor);
+
   return (
-    <div className="header">
+    <div className={`header ${color && 'header-bg'}`}>
       {/* Logo */}
       <Link to={'/'}>
         <h1>משיבת נפש</h1>
