@@ -9,7 +9,7 @@
 /* TODO: Make background url reuseability, instead hardcoded. */
 .hero-img::before {
   content: '';
-  background: url('https://meshivat-nafesh.web.app/about/building.jpg');
+  background: url('https://meshivat-nafesh.web.app/building.jpg');
   background-size: cover;
   background-position: center top;
   height: 100%;
