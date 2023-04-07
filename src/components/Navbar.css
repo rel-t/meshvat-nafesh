@@ -60,4 +60,8 @@
   .hamburger {
     display: initial;
   }
+
+  .nav-menu.active{
+    right: 0;
+  }
 }
